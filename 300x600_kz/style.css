@@ -1,0 +1,165 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+  color: #ecac06;
+}
+
+.container {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  /*top: 300px;*/
+  /*left: 600px;*/
+  background-color: #ffcc00;
+  background: radial-gradient(circle, #ffef4f, #ffcc00);
+  /*background-image: url("bg01.jpg");*/
+  background-size: 300px 600px;
+/*  background-position: 0 0;
+  background-repeat: no-repeat;*/
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.el {
+  position: absolute;
+  /*width: 60px;*/
+  left: 0;
+  top: 0;
+}
+
+.txt {
+  width: 300px;
+  left: 0px;
+  top: 0px;
+}
+
+
+/*#txt01 {
+  width: 241px;
+  left: 30px;
+  top: 131px;
+}*/
+
+
+@keyframes vertmove {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 500px;
+  }
+}
+
+.lentil{
+  width: 55px;
+  top: -60px;
+  left: 25px;
+  animation: 2s ease-in;
+}
+
+#lentil01 {
+  width: 44px;
+  left: 15px;
+  animation-delay: 1.8s;
+  animation-iteration-count: 1;
+}
+#lentil02 {
+  width: 48px;
+  left: 125px;
+  animation-delay: 0.7s;
+  animation-iteration-count: 2;
+}
+#lentil03 {
+  width: 46px;
+  left: 235px;
+  animation-delay: 0s;
+  animation-iteration-count: 2;
+}
+
+#phone {
+  width: 253px;
+  left: 27px;
+  top: 260px;
+}
+#phone_top {
+  width: 253px;
+  left: 27px;
+  top: 260px;
+}
+
+#yellow {
+  width: 220px;
+  left: -10px;
+  top: 9px;
+}
+
+#red_prize {
+
+}
+
+#red {
+  width: 75px;
+  left: 147px;
+  top: 125px;
+}
+
+
+#glow {
+  width: 150px;
+  left: 103px;
+  top: 85px;
+  /*animation: pulse 0.2s infinite alternate;*/
+}
+
+#smartphones {
+  width: 232px;
+  left: 32px;
+  top: 160px;
+}
+
+#link {
+  width: 260px;
+  height: 60px;
+  left: 20px;
+  top: 510px;
+  border-radius: 18px;
+  background: linear-gradient(to bottom, #fd000a, #930106);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/*.pack {
+  width: 230px;
+  left: 65px;
+  top: 290px;
+}*/
+
+#schirm {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  background-color: #ffcc00;
+  /*background-image: url("bg01.jpg");*/
+  background-size: cover;
+  opacity: 0;
+}

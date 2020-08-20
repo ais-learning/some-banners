@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=300,height=600">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.0_ed5816e732515f56d96a67f6a2a15ccb_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.0_56fa823cfbbef1c2f4d4346f0f0e6c3c_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.0_71489205621d46cbe88348eeb8fe493f_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      var delayTxt = 0;
+      while (delayTxt < 20) {
+        TweenLite.to("#txt01", 0.2, {ease: Power1.easeInOut, left: "18px", delay: delayTxt + 0.1});
+        TweenLite.to("#txt02", 0.2, {ease: Power1.easeInOut, left: "18px", delay: delayTxt + 0.1});
+        TweenLite.to("#comp", 0.5, {ease: Power1.easeInOut,  top: "164px", opacity: 1, delay: delayTxt + 0.4});
+        TweenLite.to("#comp", 0.3, {ease: Power1.easeInOut,  width: "800px", top: "70px", left: "-100px", opacity: 0, delay: delayTxt + 2.1});
+
+
+        TweenLite.to("#txt04", 0.2, {ease: Power1.easeInOut, left: "18px", delay: delayTxt + 2});
+
+        TweenLite.to("#snk-bar", 0.3, {ease: Power1.easeInOut, width: "289px", bottom: "-3px", left: "-15px", delay: delayTxt + 2});
+        TweenLite.to("#snk-bar", 0.2, {ease: Power1.easeInOut, width: "259px", bottom: "-3px", left: "0px",  delay: delayTxt + 2.3});
+
+        if (delayTxt < 15) {
+          TweenLite.to("#brown-rect", 0.3, {ease: Power1.easeInOut, opacity: 1, delay: delayTxt + 4.3});
+
+          TweenLite.to("#snk-bar", 0, {bottom: "-400px", delay: delayTxt + 4.6});
+          TweenLite.to("#txt01", 0, {left: "320px", delay: delayTxt + 4.6});
+          TweenLite.to("#txt02", 0, {left: "-320px", delay: delayTxt + 4.6});
+          TweenLite.to("#txt04", 0, {left: "320px", delay: delayTxt + 4.6});
+          TweenLite.to("#comp", 0, { width: "465px", top: "660px", left: "-45px", opacity: 0, delay: delayTxt + 4.6});
+
+          TweenLite.to("#brown-rect", 0.3, {ease: Power1.easeInOut, opacity: 0, delay: delayTxt + 4.7});
+        }
+        delayTxt += 5;
+      }
+   });
+   </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div class="container">
+      <div id="snk-crop-bott">
+        <img src="snk-crop-bott.svg">
+      </div>
+      <div id="comp">
+        <img src="comp.gif">
+      </div>
+      <div id="snk-bar">
+        <img src="snk-bar.png">
+      </div>
+      <div id="txt01" class="txt">
+        <img src="txt01.svg">
+      </div>
+      <div id="txt02" class="txt">
+        <img src="txt02.svg">
+      </div>
+
+<!--       <div id="clapper">
+        <div id="clapper_top">
+          <img src="clapper_top.png">
+        </div>
+        <div id="clapper_bott">
+          <img src="clapper_bott.png">
+        </div>
+      </div> -->
+      <div id="txt04" class="txt">
+        <img src="txt04.svg">
+      </div>
+      <div id="brown-rect"></div>
+    </div>
+  </a>
+</body>

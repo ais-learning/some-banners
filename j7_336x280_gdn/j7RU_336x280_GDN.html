@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=336,height=280">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.0_ed5816e732515f56d96a67f6a2a15ccb_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.0_56fa823cfbbef1c2f4d4346f0f0e6c3c_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.0_71489205621d46cbe88348eeb8fe493f_min.js"></script>
+  <script type="text/javascript">
+
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      var delayTxt = 0;
+
+      while (delayTxt < 27) {
+        TweenLite.to("#orange", 1, { ease: Power2.easeInOut, width: "105px", left: "120px", top: "45px", opacity: 1, delay: delayTxt});
+        TweenLite.to("#people01", 1, { ease: Power2.easeInOut, opacity: 1, delay: delayTxt + 1.2});
+        TweenLite.to("#people02", 1, { ease: Power2.easeInOut, opacity: 1, delay: delayTxt + 1.6});
+        TweenLite.to("#pack", 1, { ease: Power2.easeInOut, width: "258px", top: "-70px", left: "40px", opacity: 1, delay: delayTxt +3});
+        TweenLite.to("#people01", 1, { ease: Power2.easeInOut, opacity: 0, delay: delayTxt + 3.2});
+        TweenLite.to("#orange", 0, { ease: Power2.easeInOut, width: "10px", left: "165px", top: "90px", opacity: 0, delay: delayTxt + 4});
+
+        TweenLite.to("#people02", 0.5, { ease: Power2.easeInOut, opacity: 0, delay: delayTxt + 4.5});
+        TweenLite.to("#people02", 0, { opacity: 0, width: "133px", top: "27px", left: "81px", delay: delayTxt + 5});
+        TweenLite.to("#pack", 1, { ease: Power2.easeInOut, width: "126px", top: "11px", left: "220px", delay: delayTxt +4.5});
+        TweenLite.to("#bg2", 1, { ease: Power2.easeInOut, width: "336px", opacity: 1, delay: delayTxt + 4.5});
+        TweenLite.to("#people02", 1, { ease: Power2.easeInOut, opacity: 1, delay: delayTxt + 5.1});
+        TweenLite.to("#txt", 1, { ease: Elastic.easeOut.config(0.6, 0.45), width: "276px", left: "0", bottom: "0", opacity: 1, delay: delayTxt + 5.1});
+
+
+        if (delayTxt < 18) {
+          TweenLite.to("#bg2", 0.6, { ease: Power2.easeInOut, opacity: 0, delay: delayTxt + 8.3});
+          TweenLite.to("#pack", 0.6, { ease: Power2.easeInOut, opacity: 0, delay: delayTxt +8.3});
+          TweenLite.to("#txt", 0.6, { ease: Power2.easeInOut, opacity: 0, delay: delayTxt + 8.3});
+          TweenLite.to("#people02", 0.6, { ease: Power2.easeInOut, opacity: 0, delay: delayTxt + 8.3});
+ 
+          TweenLite.to("#pack", 0, { width: "20px", top: "100%", left: "160px", opacity: 0, delay: delayTxt + 8.9});
+          TweenLite.to("#txt", 0, {  width: "20px", left: "140px", bottom: "-10px", delay: delayTxt + 8.9});
+          TweenLite.to("#people02", 0, {  width: "133px", left: "5px", top: "190px", delay: delayTxt + 8.9});
+        }
+        delayTxt += 9;
+      }
+   });
+
+    
+  </script>
+</head>
+<body>
+	<a href="javascript:window.open(window.clickTag)" target="_blank">
+		<div class="container">
+      <div id="bg">
+        <img src="bg01.jpg">
+      </div>
+      <div id="bg2">
+        <img src="bg02.jpg">
+      </div>
+      <div id="people01">
+        <img src="people01.png" >
+      </div>
+      <div id="people02">
+        <img src="people02.png" >
+      </div>
+      <div id="orange">
+        <img src="orange.png" >
+      </div>
+      <div id="pack">
+        <img src="pack.png" >
+      </div>
+      <div id="txt">
+        <img src="txt.png" >
+      </div>
+
+		</div>
+	</a>
+
+</body>

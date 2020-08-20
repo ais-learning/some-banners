@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=240,height=400">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      TweenLite.ticker.useRAF(false);
+      TweenLite.lagSmoothing(0);
+      var delayTxt = 0;
+      var tl = new TimelineMax({ repeat: 2, repeatDelay: 2.5});
+
+      tl.from("#bg", 0.6, {x: -40})
+        .from("#car", 1, {x: -60, y: -50, scale: 0.3, autoAlpha: 0.8, ease:Back.easeOut}, '-=0.6')
+        .from("#arr01", 0.4, {autoAlpha: 0, y: -120})
+        .from("#txt01", 0.4, {autoAlpha: 0, scale: 0.5})
+        .from("#kmgbg", 0.5, {scale: 0.3, y: 60, autoAlpha: 0}, '+=0.3')
+        .from("#kmg", 0.4, {scale: 0.3, autoAlpha: 0}, '-=0.2')
+        .from("#glare", 0.4, {scale: 0.4, autoAlpha: 0, rotation: -120, ease:Back.easeOut})
+        .from("#glare02", 0.4, {scale: 0.4, autoAlpha: 0, rotation: -60, ease:Back.easeOut}, '-=0.3')
+        .to("#glare", 0.3, {scale: 0.4, autoAlpha: 0, rotation: -120}, '+=0.2')
+        .to("#glare02", 0.3, {scale: 0.4, autoAlpha: 0, rotation: -120}, '-=0.3')
+        .to("#txt01", 0.4, {scale: 0.4, autoAlpha: 0}, '+=0.2')
+        .to("#arr01", 0.3, {y: 350}, '-=0.3')
+
+        .from("#step02", 0.3, {scale: 0.3, autoAlpha: 0}, '-=0.2')
+        .from("#txt02a", 0.3, {scale: 0.3, autoAlpha: 0}, '-=0.2')
+        .from("#txt02b", 0.3, {scale: 0.3, autoAlpha: 0})
+        .to("#bg", 0, {autoAlpha: 0})
+        .to("#car", 0, {autoAlpha: 0})
+        .to("#txt02a", 0.4, {x: -300}, '+=1.4')
+        .to("#txt02b", 0.4, {x: 300}, '-=0.4')
+        .to("#step02", 0.4, {scale: 0.3, autoAlpha: 0}, '-=0.4')
+        .to("#arr01", 0.4, {y: 20}, '-=0.2')
+        .from("#card", 0.4, {autoAlpha: 0, scale: 0.5, y: 120}, '-=0.3')
+        .from("#txt03", 0.4, {autoAlpha: 0, scale: 0.5}, '+=0.1')
+        .to("#kmgbg", 0.5, {y: 100, autoAlpha: 0}, '+=0.6')
+        .to("#kmg", 0.4, { y: 20, autoAlpha: 0}, '-=0.6')
+        .to("#arr01", 0.4, {y: -100}, '-=0.2')
+        .to("#txt03", 0.4, {autoAlpha: 0, scale: 0.5}, '-=0.4')
+        .to("#card", 0.4, {scale: 0.9, y: -62}, '-=0.4')
+        .from("#bg02", 0.6, {scale: 1.1, autoAlpha: 0}, '-=0.2')
+        .from("#txt05", 0.3, {autoAlpha: 0, scale: 0.5}, '-=0.2')
+ 
+          ;
+   });
+  </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div class="container">
+      <div id="bg" class="el"></div>
+       <div id="car">
+        <img src="car.png">
+      </div>
+       <div id="glare">
+        <img src="glare.png">
+      </div>
+      <div id="glare02">
+        <img src="glare.png">
+      </div>
+        <div id="arr01" class="el">
+        <img src="arr01.png">
+      </div>
+       <div id="txt01" class="el">
+        <img src="txt01.svg">
+      </div>
+     <div id="kmgbg" class="el">
+        <img src="kmg_bg.png">
+      </div>
+      <div id="kmg" class="el">
+        <img src="kmg.png">
+      </div>
+      <div id="txt02a" class="el">
+        <img src="txt02a.svg">
+      </div>
+      <div id="txt02b" class="el">
+        <img src="txt02b.svg">
+      </div>
+      <div id="step02" class="el">
+        <img src="step02.png">
+      </div>
+      <div id="bg02" class="el"></div>
+      <div id="card" class="el">
+        <img src="card.png">
+      </div>
+ 
+     <div id="txt03" class="el">
+        <img src="txt03.svg">
+      </div>
+     <div id="txt05" class="el">
+        <img src="txt05.svg">
+      </div> 
+    </div>
+  </a>
+</body>

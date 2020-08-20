@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=250,height=360">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      TweenLite.ticker.useRAF(false);
+      TweenLite.lagSmoothing(0);
+      var tl = new TimelineMax({ repeat: 3, repeatDelay: 3});
+      // var tl = new TimelineMax();
+
+      tl.from("#cat", 0.6, {scale: 0.8, y: 50, autoAlpha: 0})
+        .from("#txt01", 0.6, {scale: 0.4, autoAlpha: 0}, '+=0.2')
+        .from("#food", 0.6, {scale: 0.8, y: 100})
+        .from("#tongue_img", 0.7, { y: 30, x: -20, scale: 0.5})
+        .to("#tongue_img", 0.8, { y: 30, x: 30, scale: 0.4}, '+=0.3')
+        .to("#cat", 0.6, {scale: 0.8, y: 50, autoAlpha: 0}, '+=0.3')
+        .to("#food", 0.6, {scale: 0.8, y: 200}, '-=0.4')
+        .to("#corner", 0.6, {y: 200}, '-=0.6')
+        .to("#txt01", 0.5, {scale: 0.4, autoAlpha: 0}, '-=0.6')
+        .from("#txt02", 0.5, {scale: 0.4, autoAlpha: 0})
+        .from("#pouch", 0.8, {scale: 0.5, y: 50, autoAlpha: 0})
+        .from("#gram01", 0.6, {scale: 1.5, autoAlpha: 0})
+        .to("#txt02", 0.5, {scale: 0.4, autoAlpha: 0}, '+=1.3')
+        .to("#gram01", 0.6, {scale: 0.5, autoAlpha: 0}, '-=0.4')
+        .to("#pouch", 0.6, {scale: 0.63, y: 81, x: 61}, '-=0.4')
+        
+        .from("#salmon", 0.6, {x: -150}, '-=0.6')
+        .from("#chicken", 0.6, {x: 150})
+        .from("#duck", 0.6, {x: -150}, '-=0.6')
+        .from("#gram02", 0.6, {scale: 1.5, autoAlpha: 0})
+        .from("#logo", 0.6, {y: -200})
+        .from("#txt03", 0.6, {autoAlpha: 0, y: -20})
+        ;
+   });
+  </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div class="container">
+      <div id="cat" class="el">
+        <img src="cat.png">
+      </div>
+      <div id="tongue" class="el">
+        <img src="tongue.png" id="tongue_img">
+      </div>
+      <div id="corner" class="el">
+        <img src="corner.png">
+      </div>
+      <div id="food" class="el">
+        <img src="food.png">
+      </div>
+      <div id="txt01" class="el">
+        <img src="txt01.png">
+      </div>
+
+       <div id="duck" class="el  pack">
+        <img src="duck.png">
+      </div>
+      <div id="chicken" class="el  pack">
+        <img src="chicken.png">
+      </div>
+      <div id="salmon" class="el  pack">
+        <img src="salmon.png">
+      </div>
+      <div id="pouch" class="el">
+        <img src="beef.png">
+      </div>
+     <div id="gram01" class="el">
+        <img src="50g.png">
+      </div>
+      <div id="txt02" class="el">
+        <img src="txt02.png">
+      </div>
+
+
+    <div id="gram02" class="el">
+        <img src="50g.png">
+      </div>
+      <div id="txt03" class="el">
+        <img src="txt03.png">
+      </div>
+      <div id="logo" class="el">
+        <img src="logo.png">
+      </div>
+
+
+    </div>
+  </a>
+</body>

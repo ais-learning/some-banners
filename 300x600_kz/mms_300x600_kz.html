@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=300,height=600">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      TweenLite.ticker.useRAF(false);
+      TweenLite.lagSmoothing(0);
+      var tl = new TimelineMax({ repeat: 3, repeatDelay: 3.5});
+      // var tl = new TimelineMax();
+
+      tl.from("#schirm", 0.6, {autoAlpha: 1})
+        .to("#lentil01", 0, {animationName: "vertmove", animationDelay: "1.6s", animationIterationCount: 1}, '-=0.6')
+        .to("#lentil02", 0, {animationName: "vertmove", animationDelay: "0.7s", animationIterationCount: 2}, '-=0.6')
+        .to("#lentil03", 0, {animationName: "vertmove", animationDelay: "0s", animationIterationCount: 2}, '-=0.6')
+        .to("#phone", 0.4, {x: 90})
+        .to("#phone_top", 0.4, {x: 90}, '-=0.4')
+        .to("#phone", 0.4, {x: 0}, '+=1.2')
+        .to("#phone_top", 0.4, {x: 0}, '-=0.4')
+        .to("#phone", 0.4, {x: -80}, '+=0.1')
+        .to("#phone_top", 0.4, {x: -80}, '-=0.4')
+        .to("#phone", 0.4, {x: 80}, '+=0.5')
+        .to("#phone_top", 0.4, {x: 80}, '-=0.4')
+        .to("#phone", 0.4, {x: -40}, '+=0.2')
+        .to("#phone_top", 0.4, {x: -40}, '-=0.4')
+        .from("#yellow", 0.7, {x: -230, ease: Power0.easeNone}, '-=0.8')
+        .from("#red", 0.7, {x: -230, ease: Power0.easeNone}, '-=0.8')
+        .from("#glow", 0.7, {x: -230, ease: Power0.easeNone}, '-=0.8')
+        .to("#phone", 0.6, {x: 30})
+        .to("#phone_top", 0.6, {x: 30}, '-=0.6')
+        .to("#yellow", 0.7, {x: -230, ease: Power0.easeNone})
+        .to("#red", 1, {y: 360}, '-=0.7')
+        .to("#glow", 1, {y: 360}, '-=1')
+        .to("#red", 0.1, {opacity: 0})
+        .to("#glow", 0.1, {opacity: 0}, '-=0.1')
+        .to("#phone", 0.4, {y: 600})
+        .to("#phone_top", 0.4, {y: 600}, '-=0.4')
+        .from("#smartphones", 0.5, {opacity: 0, scale: 0.4}, '-=0.4')
+        .from("#txt01", 0.5, {y: -200}, '-=0.4')
+        .from("#link", 0.5, {y: 200}, '-=0.4')
+        .to("#link", 0.4, {boxShadow: '0 8px 17px rgba(0, 0, 0, 0.4)', y: 3}, '+=0.7')
+        .to("#link", 0.4, {boxShadow: '0 8px 20px rgba(0, 0, 0, 0.4)', y: 0}, '+=0.1')
+        .to(".lentil", 0, {animationName: "none"})
+        ;
+   });
+  </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div class="container">
+
+      <div id="phone" class="el">
+        <img src="phone.png">
+      </div>
+      <div id="lentil01" class="el  lentil">
+        <img src="lentil01.png">
+      </div>
+      <div id="lentil02" class="el  lentil">
+        <img src="lentil02.png">
+      </div>
+      <div id="lentil03" class="el  lentil">
+        <img src="lentil03.png">
+      </div>
+<!--       <div id="phone" class="el">
+        <img src="phone.png">
+      </div> -->
+      <div id="yellow" class="el">
+        <img src="yellow.png">
+      </div>
+     <div id="glow" class="el">
+        <img src="glow.png">
+      </div>
+      <div id="red" class="el">
+        <img src="red_glow.png">
+      </div>
+
+      <div id="phone_top" class="el">
+        <img src="phone_top.png">
+      </div>
+      <div id="smartphones" class="el">
+        <img src="smartphones.png">
+      </div>
+      <div id="txt01" class="el  txt">
+        <img src="txt.svg">
+      </div>
+      <div id="link" class="el">
+        <img src="link.svg">
+      </div>
+
+
+      <div id="schirm"></div>  
+    </div>
+  </a>
+</body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=250,height=360">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      TweenLite.ticker.useRAF(false);
+      TweenLite.lagSmoothing(0);
+      var delayTxt = 0;
+      while (delayTxt < 30) {
+
+        TweenLite.to("#actor01", 1, {ease: Bounce.easeOut, left: "0px", delay: delayTxt + 0});
+        TweenLite.to("#actor01", 0.8, {ease: Bounce.easeOut, left: "-35px", delay: delayTxt + 1});
+        TweenLite.to("#actor01", 0.2, {ease: Power1.easeOut, left: "-20px", delay: delayTxt + 1.9});
+        TweenLite.to("#txt01", 0.6, {ease: Bounce.easeOut,  top: "30px", delay: delayTxt + 0.3});
+         TweenLite.to("#txt01", 0.6, {ease: Elastic.easeInOut, top: "100px", opacity:0, delay: delayTxt + 2});
+        TweenLite.to("#txt02", 1, {ease: Elastic.easeInOut, top: "7px", delay: delayTxt + 2});
+        TweenLite.to("#actor01", 1, {ease: Bounce.easeOut, top: "110px", delay: delayTxt + 2.4});
+        TweenLite.to("#hand", 0.4, {ease: Power1.easeInOut, right: "-30px", top: "240px", transform: "rotate(-18deg)",  delay: delayTxt + 3});
+        TweenLite.to("#guy01", 0, {opacity: 0, delay: delayTxt + 3.3});
+        TweenLite.to("#guy02", 0, {opacity: 1, delay: delayTxt + 3.3});
+
+        TweenLite.to("#txt02", 0.3, {ease: Power1.easeInOut, left: "320px", delay: delayTxt + 4.3});
+        TweenLite.to("#actor01", 0.8, {ease: Bounce.easeOut, top: "144px", delay: delayTxt + 5});
+        TweenLite.to("#hand", 0.4, {ease: Power1.easeInOut, right: "-370px", top: "360px", transform: "rotate(-90deg)",  delay: delayTxt + 4.2});
+        TweenLite.to("#txt03", 0.8, {ease: Elastic.easeInOut, left: "16px", delay: delayTxt + 4.2});
+        TweenLite.to("#stamp", 0.4, {ease: Power1.easeInOut,width: "245px", left: "4px", top: "28px", opacity: 1, transform: "rotate(0deg)",  delay: delayTxt + 5});
+        TweenLite.to("#txt04", 0.8, {ease: Elastic.easeInOut, left: "78px", delay: delayTxt + 5.3});
+
+        TweenLite.to("#schirm02", 0.5, {ease: Power1.easeInOut, opacity: 1, delay: delayTxt + 7});
+
+       TweenLite.to("#crop", 0.4, {ease: Power1.easeInOut, right: "0px", delay: delayTxt + 7.2});
+        TweenLite.to("#txt05",0.4, {ease: Power1.easeInOut, left: "22px", delay: delayTxt + 7.6});
+        TweenLite.to("#txt06", 0.4, {ease: Power1.easeInOut,  left: "22px",  delay: delayTxt + 7.6});
+
+
+        if (delayTxt < 20) {
+
+
+          TweenLite.to("#schirm03", 0.2, {ease: Power1.easeInOut, opacity: 1, delay: delayTxt + 9.8});
+
+          TweenLite.to("#actor01", 0, {top: "82px", delay: delayTxt + 10.1});
+          TweenLite.to("#guy01", 0, {opacity: 1, delay: delayTxt + 10.1});
+          TweenLite.to("#guy02", 0, {opacity: 0, delay: delayTxt + 10.1});
+          TweenLite.to("#txt01", 0, { top: "-100px", left: "18px", opacity: 1, delay: delayTxt + 10.1});
+          TweenLite.to("#txt02", 0, {top: "-130px", left: "18px", delay: delayTxt + 10.1});
+          TweenLite.to("#hand", 0, {right: "-150px", top: "200px", transform: "rotate(-90deg)",  delay: delayTxt + 10.1});
+          TweenLite.to("#schirm01", 0, {opacity: "0", delay: delayTxt + 10.1});
+          TweenLite.to("#schirm02", 0, {opacity: "0", delay: delayTxt + 10.1});
+          TweenLite.to("#crop", 0, {right: "-300px", delay: delayTxt + 10.1});
+          TweenLite.to("#txt03", 0, {left: "-320px", delay: delayTxt + 10.1});
+          TweenLite.to("#txt04", 0, {left: "320px", delay: delayTxt + 10.1});
+          TweenLite.to("#stamp", 0, { width: "450px", left: "-75px", top: "40px", opacity: 0, transform: "rotate(30deg)", delay: delayTxt + 10.1});
+          TweenLite.to("#txt05", 0, {left: "-400px", delay: delayTxt + 10.1});
+          TweenLite.to("#txt06", 0, {left: "400px", delay: delayTxt + 10.1});
+          TweenLite.to("#schirm03", 0.2, {ease: Power1.easeInOut, opacity: "0", delay: delayTxt + 10.1});
+  
+        }        
+          delayTxt += 10.3;
+        };
+   });
+  </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div class="container">
+     <div id="txt01" class="el">
+        <img src="txt01.svg">
+      </div>
+      <div id="actor01" class="el">
+        <img src="guy.jpg" id="guy01">
+        <img src="guy2.jpg" id="guy02">
+      </div>
+      <div id="txt02" class="el">
+        <img src="txt02.svg">
+      </div>
+      <div id="hand">
+        <img src="hand.png">
+      </div>
+       <div id="stamp" class="el">
+        <img src="stamp.png">
+      </div>  
+     <div id="txt03" class="el">
+        <img src="txt03.svg">
+      </div>
+      <div id="txt04" class="el">
+        <img src="txt04.svg">
+      </div>
+      <div class="schirm  el" id="schirm02"></div>
+     <div id="crop" >
+        <img src="crop.jpg">
+      </div>
+
+      <div id="txt05" class="el">
+        <img src="txt05.svg">
+      </div>
+      <div id="txt06" class="el">
+        <img src="txt06.svg">
+      </div>
+      <div class="schirm  el" id="schirm03"></div>
+
+
+    </div>
+  </a>
+</body>

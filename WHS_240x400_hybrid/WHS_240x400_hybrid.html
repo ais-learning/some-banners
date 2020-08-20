@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=240,height=400">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+  <script type="text/javascript">
+    TweenLite.ticker.useRAF(false);
+    TweenLite.lagSmoothing(0);
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      var delayTxt = 0;
+      while (delayTxt < 23) {
+        TweenLite.to("#cat", 0.6, {ease: Power1.easeInOut, width: "170px", left: "34px", opacity: 1, top: "166px", delay: delayTxt + 0.1});
+        TweenLite.to("#txt01", 0.7, {ease: Power1.easeInOut, opacity: 1, left: "12px", width: "216px", top: "92px", delay: delayTxt + 0.4});
+        TweenLite.to("#txt01", 0.4, {ease: Power1.easeInOut, opacity: 0, top: "40px", width: "300px", left: "-30px", delay: delayTxt + 2.5});
+        TweenLite.to("#cat", 0.6, {ease: Power1.easeInOut, width: "120px", left: "60px", opacity: 0, top: "285px", delay: delayTxt + 2.5});
+        TweenLite.to("#txt02", 0.5, {ease: Power1.easeInOut, width: "210px", left: "15px", opacity: 1, top: "92px", delay: delayTxt + 2.5});
+        TweenLite.to("#txt03", 0.5, {ease: Power1.easeInOut, width: "220px", left: "10px", opacity: 1, top: "190px", delay: delayTxt + 3});
+        TweenLite.to("#txt04", 0.6, {ease: Power1.easeInOut, width: "210px", left: "15px", opacity: 1, top: "240px", delay: delayTxt + 3.4});
+        TweenLite.to("#txt02", 0.4, {ease: Power1.easeInOut, left: "-301px",  delay: delayTxt + 5.2});
+        TweenLite.to("#txt03", 0.4, {ease: Power1.easeInOut, left: "301px",  delay: delayTxt + 5.2});        
+        TweenLite.to("#txt04", 0.6, {ease: Power1.easeInOut,  top: "114px", delay: delayTxt + 5.2});
+        TweenLite.to("#gift", 0.5, {opacity: 1, top: "166px", delay: delayTxt + 5.3});
+
+        TweenLite.to("#txt04", 0.4, {ease: Power1.easeInOut, top: "20px", opacity: 0, delay: delayTxt + 7});
+        TweenLite.to("#gift", 0.4, {opacity: 0, top: "180px", delay: delayTxt + 7});
+
+        TweenLite.to("#cat", 0.6, {ease: Power1.easeInOut, width: "140px", left: "50px", opacity: 1, top: "200px", delay: delayTxt + 7});
+        TweenLite.to("#logo1", 0.5, {ease: Power1.easeInOut, opacity: 1, delay: delayTxt + 7.3});
+        TweenLite.to("#logo2", 0.5, {ease: Power1.easeInOut, opacity: 1, delay: delayTxt + 7.3});
+
+        if (delayTxt < 12) {
+          TweenLite.to("#schirm2", 0.3, {opacity: 1, delay: delayTxt + 9.1});
+          TweenLite.to("#cat", 0, { width: "120px", left: "60px", opacity: 0, top: "220px", delay: delayTxt + 9.4});
+          TweenLite.to("#txt01", 0, { width: "60px", left: "90px", opacity: 0, top: "285px", delay: delayTxt + 9.4});
+          TweenLite.to("#txt02", 0, { width: "60px", left: "90px", opacity: 0, top: "150px", delay: delayTxt + 9.4});
+          TweenLite.to("#txt03", 0, { width: "300px", left: "-30px", opacity: 0, top: "180px", delay: delayTxt + 9.4});
+          TweenLite.to("#txt04", 0, { width: "60px", left: "90px", opacity: 0, top: "150px", delay: delayTxt + 9.4});
+          TweenLite.to("#gift", 0, { opacity: 0, top: "180px", delay: delayTxt + 9.4});
+          TweenLite.to("#logo1", 0, { opacity: 0, delay: delayTxt + 9.4});
+          TweenLite.to("#logo2", 0, { opacity: 0, delay: delayTxt + 9.4});
+
+          TweenLite.to("#schirm2", 0.3, {opacity: 0, delay: delayTxt + 9.67});
+        }        
+          delayTxt += 10;
+        };
+        TweenLite.to("#schirm", 0.5, {opacity: 1, delay: 28});
+   });
+  </script>
+</head>
+<body>
+    <div class="container">
+      <div id="bg02"></div>
+      <div id="schirm"></div> 
+      <div id="txt01" class="el">
+        <img src="txt01.svg">
+      </div>
+       <div id="cat" class="el">
+        <img src="cat.png">
+      </div>
+      <div id="txt02" class="el">
+        <img src="txt02.svg">
+      </div>
+      <div id="txt03" class="el">
+        <img src="txt03.svg">
+      </div>
+      <div id="txt04" class="el">
+        <img src="txt04.svg">
+      </div>
+      <div id="gift" class="el">
+        <img src="gift.svg">
+      </div>
+
+      <div id="logo1" class="el">
+        <img src="Logo_WHS.png">
+      </div>
+      <div id="logo2" class="el">
+        <img src="Logo_Small.png">
+      </div>
+      <div id="schirm2"></div> 
+    </div>
+</body>
